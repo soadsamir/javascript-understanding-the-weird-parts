@@ -364,6 +364,9 @@ When you set `b` equals to `a`, equals operator sees these are primitives create
 var c = {greetings: 'hi'};
 var d;
 d = c;
+
+c.greetings = 'hello'; ???
+
 ```
 Equals operator sees there is an object so it simply points to the same spot in memory.
 
