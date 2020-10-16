@@ -341,6 +341,14 @@ var anonymousGreet = function() {
 Remember functions are objects. So it creates an object on the fly and sets it equal to the variable `anonymousGreet`. So when your code runs in the execution phase, sees the first function it just says "yeah there is function" and does nothing, just keeps going. But when it sees a variable it results in a value of a function object being created.
 That's why you can call function statement before it but function expression will throw an error as "undefined is not a function" because that function is not yet created.
 
+- we can invoke function inside another one :
+function log(a) {
+    a();
+    }
+ log( function (){
+ console.log("HI");
+});
+
 ## 32 - Conceptual Aside By Value vs By Reference
 **By value** (primitives):
 
