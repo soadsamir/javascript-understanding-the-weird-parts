@@ -446,6 +446,31 @@ JavaScript engine is syntax parser in the browser.
 Semicolons are optional in JS because JS engine injects them automatically.
 But it is a bad practice to not put them because you want to know what code you are writing.
 
+```
+function getperson() {
+	return
+	{
+		name: 'tony'
+	}
+}
+
+console.log(getperson());
+//this returns undefined
+```
+
+```
+function getperson() {
+	return {
+		name: 'tony'
+	}
+}
+
+console.log(getperson());
+//this returns the object
+```
+
+
+
 ## 39 - Framework Aside Whitespace
 **Whitespace** - invisible characters that create space in your code: returns, tabs, space.
 
