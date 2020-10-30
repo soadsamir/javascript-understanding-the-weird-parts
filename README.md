@@ -386,10 +386,53 @@ With ES5 JavaScript using `var` you could solve this by setting inside a method 
 
 ## 34 - Conceptual Aside - Arrays  - Collections of Anything
 **Arrays** can hold a mix of anything: functions, primitives, objects.
+```javascript
+var arr = [
+1,
+false,
+{
+	name : "tony",
+	age : 20
+},
 
+function function_name(name) {
+	greeting = "hello";
+	console.log(greeting + name);
+},
+
+"HI"
+
+];
+
+console.log(arr);
+arr[3](arr[2].name);
+```
 ## 35 - `arguments` and spread
 **Arguments** are the parameters you pass to a function. JS creates a keyword of the same name which is an array-like that contains all parameters that you passed.
+by default arguments are Undefiend value.. Or we can Use default values
+  
+  
+  ``` function greet(firstname , lastname , language) {
 
+
+if (arguments.length == 0) {
+	console.log("Missing parameters");
+	return;
+}
+
+	language = language || 'en';
+	console.log("HI" + firstname);
+	console.log(lastname);
+	console.log(language);
+	console.log(arguments);
+	console.log(arguments[0]);
+
+}
+
+greet();
+ ``` 
+  
+  
 In ES6 we can do: `function greet(firstname, ...other)` and `other` will be an array that contains the rest of the arguments.
 
 ## 36 - Framework Aside Function Overloading
