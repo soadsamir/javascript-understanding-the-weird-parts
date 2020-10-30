@@ -412,7 +412,8 @@ arr[3](arr[2].name);
 by default arguments are Undefiend value.. Or we can Use default values
   
   
-  ``` function greet(firstname , lastname , language) {
+  ``` 
+  function greet(firstname , lastname , language) {
 
 
 if (arguments.length == 0) {
