@@ -530,6 +530,22 @@ Every time function is called it creates a new execution context and its variabl
 ## 45 - Closures And Callbacks
 **Callback function** - a function you give to another function to be run when the other function is finished.
 
+```
+function sayHiLater (){
+  var greeting = 'Hi';
+
+  setTimeout(function(){
+
+console.log(greeting);
+
+
+  } , 3000);
+}
+sayHiLater();
+
+//thanks to clusers the context still has access to greeting for 3 sec later... it is a call back function 
+```
+
 ## 46 - `call()`, `apply()`, and `bind()`
 Because functions are objects, all functions have access to built-in `call()`, `bind()` and `apply()` methods.
 
