@@ -518,7 +518,7 @@ We describe this proccess as execution context has closed in outer variables.
 
 ## 43 - Understanding Closures Pt. 2
 Pay attention when functions are executed to understand where it will look for variables down the scope chain.
-####watch the video
+#### watch the video
 
 
 
