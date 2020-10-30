@@ -518,6 +518,11 @@ We describe this proccess as execution context has closed in outer variables.
 
 ## 43 - Understanding Closures Pt. 2
 Pay attention when functions are executed to understand where it will look for variables down the scope chain.
+####watch the video
+
+
+
+
 
 ## 44 - Framework Aside Function Factories
 Every time function is called it creates a new execution context and its variable environment which sits in that specific space in memory. So even if you call the same function again and it creates a new variable of the same name. It doesn't overwrite it, because it is created in a separate environment and sits in the different space in the memory.
