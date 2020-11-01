@@ -556,8 +556,23 @@ Because functions are objects, all functions have access to built-in `call()`, `
 **`apply()`** is almost the same as `call()` but instead you need to pass an array as a parameter: `.apply(object, [parameters])`
 
 In practice, you can use `call()` and `apply()` to borrow methods/functions from objects and use on another object with the same property names.
+`person.getfullname.apply(person2);`
 
 **Function currying** - creating a copy of a function but with some preset parameters.
+
+```
+//FUNCTION CURRING
+function multibly(a,b) {
+	return a*b;
+}
+
+var multiblybytwo = multibly.bind(this,2);
+console.log(multiblybytwo(4));
+
+var multiblybythree = multibly.bind(this,3);
+console.log(multiblybythree(4));
+
+```
 
 ## 47 - Functional Programming
 A mapping function is a function which takes one array and outputs another array. It is very powerful and useful technique that you will see in codebases.
